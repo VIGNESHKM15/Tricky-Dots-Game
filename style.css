@@ -1,0 +1,23 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 5px;
+    margin: 20px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.line {
+    height: 5px;
+    background-color: #333;
+    position: absolute;
+    transform-origin: 50% 50%;
+    pointer-events: none;
+}

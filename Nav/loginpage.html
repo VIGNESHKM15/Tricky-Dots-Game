@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Love+Ya+Like+A+Sister&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+	background-image: url('https://i.ibb.co/68b3SqH/309432-love.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.passcode-container,
+.p {
+    color: red;
+    font-family: "Oregano", cursive;
+    margin-bottom: 10rem;
+    margin-left: 5rem;
+    font-size: 20px;
+    text-align: center;
+}
+h2{
+    font-family: "Love Ya Like A Sister", cursive; 
+}
+
+.passcode-container {
+    justify-content: right;
+	margin-right: 60rem;
+}
+
+input {
+    padding: 12px;
+	width: 17rem;
+    margin: 10px;
+    margin-top: -15rem;
+	border-radius: 4rem;
+	margin-right: 1.5rem;
+    font-size: 16px;
+	font-family: "Love Ya Like A Sister", cursive;
+	font-style: normal;
+	box-shadow: 0 0 20px rgba(222, 0, 0, 0.5);
+	border-color: red;
+}
+.input::placeholder {
+	color: red;
+	font-family: "Love Ya Like A Sister", cursive;
+	font-size: 36px;
+	font-weight: 900;
+	font-style: normal;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+	border-radius: 4rem;
+	margin-right: 2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url('https://i.ibb.co/2Sd6QRT/My-love-jpeg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  }
+  .passcode-container {
+	display: block;
+	margin-right: -1rem;
+}
+}
+</style>
+</head>
+<body>
+    <div class="passcode-container">
+        <p>As I sit down to express my feelings on this special proposal day, my heart is overflowing with emotions that words can hardly capture. From the moment we crossed paths, my life has been beautifully transformed by your presence.
+
+            Today isn't just about a proposal; it's about declaring what my heart has known for so long. You are my confidant, my joy, and my greatest love. Every day with you is an adventure, and with each passing moment, my love for you deepens.
+            
+            Your laughter is the melody that brightens my darkest days, and your touch is the warmth that envelops my soul. I cherish the way you understand me without words and love me unconditionally. You are my partner in every sense, my anchor, and my greatest supporter.
+            
+            So, on this special day, I want to make a promise to you - a promise of forever. I want to continue building a life filled with love, laughter, and countless shared dreams. Together, let's create a journey that's uniquely ours, where every step is a testament to the enduring love we share.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With all the love in my heart,
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~ Vignesh K
+        </p>
+        <h2>Hi My Love &#10084;</h2>
+        <input type="password" id="passcodeInput" placeholder="Enter your passcode darling &#10084;" maxlength="4" required/>
+		<br>
+		<button class="pushable" onclick="checkPasscode()">
+			<span class="front">
+				Submit
+			</span>
+		  </button>
+    </div>
+	<audio controls autoplay loop style="display: none;">
+		<source src="https://github.com/VIGNESHKM15/cutter-song/raw/main/WhatsApp%20Audio%202024-02-06%20at%2003.02.15_baa5bdc9%20(mp3cut.net).mp3" type="audio/mp3">
+	</audio>
+	 
+    <script>
+		function checkPasscode() {
+    const passcodeInput = document.getElementById("passcodeInput");
+    const passcode = passcodeInput.value;
+
+    // Replace '1234' with your desired passcode
+    if (passcode === '1234') {
+        // Redirect to your desired site
+        onclick="window.open('./fingerprint/)"
+    } else {
+        alert('Incorrect passcode. Please try again.');
+        passcodeInput.value = ''; // Clear the input
+    }
+}
+
+	</script>
+</body>
+</html>
